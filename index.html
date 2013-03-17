@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="my.css" />
+  	 
+		
+        <script src="jQuery-1.7.2.min.js">
+        </script>
+		<script src="jquery.mobile-1.2.0.min.js">
+        </script>
+       
+        <script src="my.js">
+        </script>
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	
+	
+        <!-- User-generated css -->
+        <style>
+        </style>
+        <!-- User-generated js -->
+        <script>
+            try {
+
+    $(function() {
+
+    });
+
+  } catch (error) {
+    console.error("Your javascript has an error: " + error);
+  }
+        </script>
+    </head>
+    <body id="body">
+	<script type="text/javascript">
+		var q=jQuery.noConflict();
+		</script>
+        <!-- Home -->
+        <div data-role="page" id="page1123">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Презентация
+                </h3>
+            </div>
+            <div data-role="content" id="pages">
+				
+				
+					<div id="main">
+					главное окно
+					
+					</div>
+					<div id="slide" class="current">
+						<div id="wowslider-container1">
+						<div class="ws_images"><ul>
+						<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+						<li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+						<li><img src="data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
+						</ul></div>
+						<a href="#" class="ws_frame"></a>
+						</div>
+						<script type="text/javascript" src="engine1/wowslider.js"></script>
+						<script type="text/javascript" src="engine1/script.js"></script>
+					</div>
+					<div id="exit">
+					
+					12345
+					</div>				
+            </div>
+            <div  data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                   
+                </h3>
+					<a id="main" href="#main" data-role="button"  class="ui-btn-left">Выход</a>
+
+					<a id="slide" href="#slide" data-role="button"  class="ui-btn-right">Старт</a>
+            </div>
+        </div>
+		<script type="text/javascript" >
+	$("#body a").on('click', function(event){
+    event.preventDefault();
+    var nextPage = $(event.target.hash);
+	alert(nextPage);
+    $("#pages .current").removeClass("current");
+    nextPage.addClass("current");
+	//alert("asd");
+	});
+	</script>
+    </body>
+</html>
